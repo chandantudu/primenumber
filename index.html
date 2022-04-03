@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prime Number Checker and Generator - DevBabu.Com</title>
+    <meta name="description" content="Online Prime Number Checker and Generator.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+  </head>
+  <body>
+    <h1>Prime Numbers</h1>
+    <div class="container">
+      <input type="radio" name="tabRadio" id="radio1" checked/>
+      <input type="radio" name="tabRadio" id="radio2"/>
+      <div class="tab-controll">
+        <label for="radio1" class="tab1">Prime Check</label>
+        <label for="radio2" class="tab2">Generate Prime</label>
+      </div>
+      <div class="wrap" id="box1">
+        <form class="prime-checker" id="primeCheckForm">
+          <input type="number" id="primeNum" placeholder="Enter a number" />
+          <div><button type="submit" id="primeCheck" class="submitBtn">Check</button></div>
+          <p id="result" class="result">
+            🙏 Enter a number to check that the number is Prime or Not.
+          </p>
+        </form>
+      </div>
+      <div class="wrap" id="box2">
+        <form class="generate-prime" id="primeGenForm">
+          <textarea name="" id="primeListArea" cols="30" rows="10"></textarea>
+          <div class="el-grp">
+            <label for="primeFrom">Range start (Max=12 Digit)</label>
+            <input type="number" id="rangeStart" maxlength="12" placeholder="Range start" />
+            <label for="numOfPrime">How many? (Max=50)</label>
+            <input
+              type="number"
+              id="numOfPrime"
+              max="50"
+              placeholder="How many? Maximum 50"
+            />
+          </div>
+          <div><button type="submit" id="primeGen" class="submitBtn">Generate</button></div>
+          <p id="result2" class="result">
+            🙏 Please fill the input fields to Generate the Prime Numbers.
+          </p>
+        </form>
+      </div>
+      <div class="footer"><a target="_blank" href="https://www.devbabu.com/programming-logic-to-check-generate-prime-numbers/">DevBabu.Com</a></div>
+    </div>
+    <script src="main.min.js"></script>
+  </body>
+</html>
